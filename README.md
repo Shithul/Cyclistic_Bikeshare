@@ -45,7 +45,7 @@ The data, which includes the 12 months of April 2020 through March 2021 is downl
 
 ## Analysis
 We will be using pivot tables and charts from Excel to get a summary of our findings. The results from the following SQL statements will create our data viz in Excel
-### Average No of rides in Day hours
+### Total No of rides in Day hours
 To analyze and visualize the average number of bike trip  per day for casual and member riders, we used the results from this SQL statement to create the visualization in Excel
 
 ```
