@@ -41,3 +41,20 @@ Since we have to analyze the data over the past 12 months, I'm afraid we might m
 ## Process
 The data, which includes the 12 months of April 2020 through March 2021 is downloaded. The .zip files convert to CSV text files, and we import these files to tables housed in an Azure Data Studio database, which runs Microsoft SQL Server (MSSQL). The SQL tables are combined into a larger table and cleaned it afterwards.
 
+[Click Here](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/SQLQuery_Portfolio.sql) To see all the Data cleaning Steps
+
+## Analysis
+We will be using pivot tables and charts from Excel to get a summary of our findings. The results from the following SQL statements will create our data viz in Excel
+### Average No of rides in Day hours
+To analyze and visualize the average number of bike trip  per day for casual and member riders, we used the results from this SQL statement to create the visualization in Excel
+
+```
+ SELECT DATEPART(hour, started_at) AS 'Hour', COUNT(*) AS 'Count',member_casual
+ FROM[dbo].[Cycle_trip]
+ WHERE start_station_name IS NOT NULL
+ GROUP BY DATEPART(hour, started_at), member_casual
+ ORDER BY DATEPART(hour, started_at)
+``` 
+ ![Avg_NoOf_RidesPerDay](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/AVG_No_of_RidesPerDay.jpg)
+
+
