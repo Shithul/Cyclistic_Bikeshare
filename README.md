@@ -110,7 +110,7 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  ````
  ![Ride_ttypes](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/Ride_Types.jpg)
  
- As we can see from the chart Classic bike being most preferable among both Casual and Subscription Riders . Also electric bike preferences increased ,however the Docked bikes are being the least prefered among riders . May be pricing flexibility and convenience made the Classic bike a success.
+ As we can see from the chart Classic bike being most preferable among both Casual and Subscription Riders . Also electric bike preferences increased ,however the Docked bike being the least prefered among riders . May be pricing flexibility and convenience made the Classic bike a success.
  
  
 
