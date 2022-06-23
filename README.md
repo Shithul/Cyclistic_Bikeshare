@@ -61,6 +61,44 @@ This chart illustrating the Subscription members are more frequently using the s
 
 ### Average Trip Duration by riders Weekly
 To analyze and visualize the average Trip Duration weekly for casual and member riders, we used the results from this SQL statement to create the visualization 
-
+```
+ SELECT	CAST (CAST( AVG(CAST(CAST(Trip_Duration AS DATETIME) AS FLOAT))AS DATETIME)AS TIME) AS Average_Ride_Length
+       ,member_casual,DATEPART(dw, started_at) as Weeksday
+ FROM[dbo].[Cycle_trip]
+ GROUP BY DATEPART(dw, started_at),member_casual
+ ```
 ![Avg_trip](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/AVG_TripDuration_PerWeek.jpg)
+
+This data viz reiterates the trend from the average monthly analysis casual riders tends to take longer trips than members. However, members are more consistent with their rides throughout the week.
+
+### Rides per Week
+Result from this SQL statement were used to create visualization in Excel
+```
+
+ SELECT  DATEPART(WEEKDAY, started_at) AS 'WEEKDAY', COUNT(*) AS 'Count',member_casual
+ FROM[dbo].[Cycle_trip]
+ WHERE start_station_name IS NOT NULL
+ GROUP BY DATEPART(WEEKDAY, started_at), member_casual
+ ORDER BY DATEPART(WEEKDAY, started_at)
+ ```
+ ![Rides_Week](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/RidePer_Week.jpg)
+ 
+ Casual riders are more active in weekends they have more trips than the subscribe members, where the Members riders are consitent with their utilization throughout the week.
+ 
+ ### Rides per Month
+ For the analysis of Total No of rides by both Casual and Subscription members for each month, following SQL query were used to create Data Visualization
+ ```
+  SELECT  DATEPART(MONTH, started_at) AS 'MONTH', COUNT(*) AS 'Count',member_casual
+ FROM[dbo].[Cycle_trip]
+ WHERE start_station_name IS NOT NULL
+ GROUP BY DATEPART(MONTH, started_at), member_casual
+ ORDER BY DATEPART(MONTH, started_at)
+ ```
+ ![Rides_Month](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/RidesPer_Month.jpg)
+ 
+The chart above illustrates how the seasonal changes directly effecting the Bike trips. A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer . In warmer months there is a significant increase in Casual members using the service this is belive to be mainly due to Tourist season in california.
+ 
+ 
+ 
+ 
 
