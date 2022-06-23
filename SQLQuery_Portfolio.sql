@@ -108,13 +108,25 @@ FROM
  DELETE
  FROM [dbo].[Cycle_trip]
  WHERE started_at > ended_at
+ 
+--Lets add a new column showing the Weekday of trips this will help in further analysis of the Cycle trip
+--Here 1 is Sunday upto 7 is Saturday 
+
+ ALTER TABLE [dbo].[Cycle_trip]
+ ADD Week_Day int
+
+ UPDATE [dbo].[Cycle_trip]
+ SET Week_Day = DATEPART(WEEKDAY , started_at)
 
 --Lets see what are types of memberships in the data set
 
  SELECT DISTINCT(member_casual)
  FROM[dbo].[Cycle_trip]
+ 
+ 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+--DATA ANALYSING
 --Lets Analyse the Trip_Duration data
  SELECT MAX(Trip_Duration)
  FROM[dbo].[Cycle_trip]
@@ -125,15 +137,6 @@ FROM
 --lets find out Averge Trip_duration which is around from the below Query as "24 min and 24 seconds"
  SELECT CAST (CAST( AVG(CAST(CAST(Trip_Duration AS DATETIME) AS FLOAT))AS DATETIME)AS TIME)
  FROM[dbo].[Cycle_trip]
-
---Lets add a new column showing the Weekday of trips this will help in further analysis of the Cycle trip
---Here 1 is Sunday upto 7 is Saturday 
-
- ALTER TABLE [dbo].[Cycle_trip]
- ADD Week_Day int
-
- UPDATE [dbo].[Cycle_trip]
- SET Week_Day = DATEPART(WEEKDAY , started_at)
 
 
 --To find no.of rides in each hour per day
