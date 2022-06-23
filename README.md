@@ -98,7 +98,19 @@ Result from this SQL statement were used to create visualization in Excel
  
 The chart above illustrates how the seasonal changes directly effecting the Bike trips. A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer . In warmer months there is a significant increase in Casual members using the service this is belive to be mainly due to Tourist season in california.
  
+ ### Preferance of Ride Type
+ Before Dec 2020 there was only two types of bikes were available Docked and Electric. After Dec2020 the company introduced Classic type of bikes .Lets analyse how this new introduction changed the riders preference. Following are the SQL query helped for this analysation.
  
+ ```
+  SELECT rideable_type,member_casual, COUNT(*) AS 'Count', CAST(started_at AS DATE) AS 'DATE'
+ FROM[dbo].[Cycle_trip]
+ WHERE start_station_name IS NOT NULL
+ GROUP BY  CAST(started_at AS DATE),rideable_type,member_casual
+ 
+ ````
+ ![Ride_ttypes](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/Ride_Types.jpg)
+ 
+ As we can see from the chart Classic bike being most preferable among both Casual and Subscription Riders . Also electric bike preferences increased ,however the Docked bikes are being the least prefered among riders . May be pricing flexibility and convenience made the Classic bike a success.
  
  
 
