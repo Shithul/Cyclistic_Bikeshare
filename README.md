@@ -56,5 +56,11 @@ To analyze and visualize the average number of bike trip  per day for casual and
  ORDER BY DATEPART(hour, started_at)
 ``` 
  ![Avg_NoOf_RidesPerDay](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/AVG_No_of_RidesPerDay.jpg)
+ 
+This chart illustrating the Subscription members are more frequently using the service in a day, were evening 5 o Clock being the peak time for both casual as well as subscrition members. From the graph it is understandable that the subscription members usage is mainly focused on the working hours in a day. After 5 o clock subscription members usage significantly decreases.We can summarise that most of the subscription members using bike as a main commute for work. 
 
+### Average Trip Duration by riders Weekly
+To analyze and visualize the average Trip Duration weekly for casual and member riders, we used the results from this SQL statement to create the visualization 
+
+![Avg_trip](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/AVG_TripDuration_PerWeek.jpg)
 
