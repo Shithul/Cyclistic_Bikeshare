@@ -32,4 +32,12 @@ To succeed in the deliverables, we are going to follow the data analysis process
 * Cyclistic executive team: executive team will decide whether to approve the recommended marketing program.
 
 ## Prepare
+In this project Iam using Cyclistic’s historical trip data to analyze and identify trends downloaded from [Divvy_Tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).The data were 12 months historical trip data saved in a zip file as a CSV structure.The data has been made available by
+Motivate International Inc. under this [license](https://ride.divvybikes.com/data-license-agreement).
+The data is relevant but I do have some concerns about our task.
+
+Since we have to analyze the data over the past 12 months, I'm afraid we might miss out on some key trends that could be available with more data over a longer timeframe especially due to the influence of pandemic situation may be effected the overall trend.
+
+## Process
+The data, which includes the 12 months of April 2020 through March 2021 is downloaded. The .zip files convert to CSV text files, and we import these files to tables housed in an Azure Data Studio database, which runs Microsoft SQL Server (MSSQL). The SQL tables are combined into a larger table and cleaned it afterwards.
 
