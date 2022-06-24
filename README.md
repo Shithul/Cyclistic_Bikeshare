@@ -121,3 +121,5 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  4. No of rides totally depend upon the sesonal changes in California .A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer.
  5. There is a significant increase in casual members using the rides in June ,July, August and September this is belive to be because of the Tourists using this service in tourist seasons.
  6. After analysing the preferance of riders regarding Ride type . The Classic bike being most preferable among both Casual and Subscription Riders, while Docked bikes being the least .
+ 
+ # Recommendations
