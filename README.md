@@ -112,5 +112,12 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  
  As we can see from the chart Classic bike being most preferable among both Casual and Subscription Riders . Also electric bike preferences increased ,however the Docked bike being the least prefered among riders . May be pricing flexibility and convenience made the Classic bike a success.
  
+ # Summary
+ My Assignment was work with past data and finding how do annual members and casual riders use Cyclistic bikes differently. Most significant analysis we found are :
  
-
+ 1. Subscription Members are taking more number of trips than the Casual riders.
+ 2. Casual riders taking longer trip length while Subscription members take shorter rides.And from analysing the time in a day were trips are more active we found out working hours being the peak time for subscription members usage. This illustrate Subscription members using bikes as a primary commute for work.
+ 3. While analysing Weekend trends for ride ,Casual members are more acive than subscription members.
+ 4. No of rides totally depend upon the sesonal changes in California .A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer.
+ 5. There is a significant increase in casual members using the rides in June ,July, August and September this is belive to be because of the Tourists using this service in tourist seasons.
+ 6. After analysing the preferance of riders regarding Ride type . The Classic bike being most preferable among both Casual and Subscription Riders, while Docked bikes being the least .
