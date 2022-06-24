@@ -123,3 +123,13 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  6. After analysing the preferance of riders regarding Ride type . The Classic bike being most preferable among both Casual and Subscription Riders, while Docked bikes being the least .
  
  # Recommendations
+ 
+ 1. Since Weekends are the time Casual riders excessively using the service it is good to have marketing campaigns on those days.
+
+ 2. From the analysis it is so clear that on average the casual riders tend to take longer bike trips than members. So it will be so much better to change the price rating and give better offer such a way that motivate the casual riders for an upgrade. 
+ 
+ 3. Introduction of Mobile app will really helpfull for marketing as well as notifying  the users about any promotion or advertisements. If there is a loyalty point based promotion introduced ie, Annual members gaining loyalty point for each rides and this point can be redeemed as a freeride or extra discount .This will motivate the riders to have more rides as well as motivate the Casual members to upgrade.
+ 
+ 4. Since weekends are most favorable ride time for casual members , a weekend membership program can be introduced targeting the weekend riding Casual members.
+ 
+ 5. Our analysis illustrate both Classic and Electric bikes are favourable among riders .So better price plan and availability can be given to anual members such a way that motivates the Casual riders for an Upgrade. 
