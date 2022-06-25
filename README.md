@@ -49,9 +49,11 @@ We will be using pivot tables and charts from Excel to get a summary of our find
 To analyze and visualize the average number of bike trip  per day for casual and member riders, we used the results from this SQL statement to create the visualization in Excel
 
 ```
- SELECT DATEPART(hour, started_at) AS 'Hour', COUNT(*) AS 'Count',member_casual
- FROM[dbo].[Cycle_trip]
- WHERE start_station_name IS NOT NULL
+ SELECT   DATEPART(hour, started_at) AS 'Hour', 
+          COUNT(*) AS 'Count',
+          member_casual
+ FROM     [dbo].[Cycle_trip]
+ WHERE    start_station_name IS NOT NULL
  GROUP BY DATEPART(hour, started_at), member_casual
  ORDER BY DATEPART(hour, started_at)
 ``` 
@@ -62,9 +64,10 @@ This chart illustrating the Subscription members are more frequently using the s
 ### Average Trip Duration by riders Weekly
 To analyze and visualize the average Trip Duration weekly for casual and member riders, we used the results from this SQL statement to create the visualization 
 ```
- SELECT	CAST (CAST( AVG(CAST(CAST(Trip_Duration AS DATETIME) AS FLOAT))AS DATETIME)AS TIME) AS Average_Ride_Length
-       ,member_casual,DATEPART(dw, started_at) as Weeksday
- FROM[dbo].[Cycle_trip]
+ SELECT	  CAST (CAST( AVG(CAST(CAST(Trip_Duration AS DATETIME) AS FLOAT))AS DATETIME)AS TIME) AS Average_Ride_Length ,
+          member_casual,
+          DATEPART(dw, started_at) as Weeksday
+ FROM     [dbo].[Cycle_trip]
  GROUP BY DATEPART(dw, started_at),member_casual
  ```
 ![Avg_trip](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/AVG_TripDuration_PerWeek.jpg)
@@ -75,9 +78,11 @@ This data viz reiterates the trend from the average monthly analysis casual ride
 Result from this SQL statement were used to create visualization in Excel
 ```
 
- SELECT  DATEPART(WEEKDAY, started_at) AS 'WEEKDAY', COUNT(*) AS 'Count',member_casual
- FROM[dbo].[Cycle_trip]
- WHERE start_station_name IS NOT NULL
+ SELECT   DATEPART(WEEKDAY, started_at) AS 'WEEKDAY',
+          COUNT(*) AS 'Count',
+          member_casual
+ FROM     [dbo].[Cycle_trip]
+ WHERE    start_station_name IS NOT NULL
  GROUP BY DATEPART(WEEKDAY, started_at), member_casual
  ORDER BY DATEPART(WEEKDAY, started_at)
  ```
@@ -88,9 +93,11 @@ Result from this SQL statement were used to create visualization in Excel
  ### Rides per Month
  For the analysis of Total No of rides by both Casual and Subscription members for each month, following SQL query were used to create Data Visualization
  ```
-  SELECT  DATEPART(MONTH, started_at) AS 'MONTH', COUNT(*) AS 'Count',member_casual
- FROM[dbo].[Cycle_trip]
- WHERE start_station_name IS NOT NULL
+ SELECT   DATEPART(MONTH, started_at) AS 'MONTH', 
+          COUNT(*) AS 'Count',
+          member_casual
+ FROM     [dbo].[Cycle_trip]
+ WHERE    start_station_name IS NOT NULL
  GROUP BY DATEPART(MONTH, started_at), member_casual
  ORDER BY DATEPART(MONTH, started_at)
  ```
@@ -102,10 +109,12 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  Before Dec 2020 there was only two types of bikes were available Docked and Electric. After Dec2020 the company introduced Classic type of bikes .Lets analyse how this new introduction changed the riders preference. Following are the SQL query helped for this analysation.
  
  ```
-  SELECT rideable_type,member_casual, COUNT(*) AS 'Count', CAST(started_at AS DATE) AS 'DATE'
- FROM[dbo].[Cycle_trip]
- WHERE start_station_name IS NOT NULL
- GROUP BY  CAST(started_at AS DATE),rideable_type,member_casual
+ SELECT   rideable_type,member_casual,
+          COUNT(*) AS 'Count',
+          CAST(started_at AS DATE) AS 'DATE'
+ FROM     [dbo].[Cycle_trip]
+ WHERE    start_station_name IS NOT NULL
+ GROUP BY CAST(started_at AS DATE),rideable_type,member_casual
  
  ````
  ![Ride_ttypes](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/Ride_Types.jpg)
