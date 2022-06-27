@@ -121,6 +121,12 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  
  As we can see from the chart Classic bike being most preferable among both Casual and Subscription Riders . Also electric bike preferences increased ,however the Docked bike being the least prefered among riders . May be pricing flexibility and convenience made the Classic bike a success.
  
+ ### Geolocation of the Ride 
+ With the help of tableau, plotted a map showing the trend of ride within Casual and Anuual member riders. It showing that people usig the ride more in beach area ,there is a high trend of longer rides in beaches  compare to short range rides in the city area. This may be illustarting in cities people using bike as a commute to work.
+ [Tableau](https://public.tableau.com/app/profile/shithul.m/viz/Cyclistic_map/Geo_location)
+ ![Map](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/Geo_location.png)
+ 
+ 
  # Summary
  My Assignment was work with past data and finding how do annual members and casual riders use Cyclistic bikes differently. Most significant analysis we found are :
  
