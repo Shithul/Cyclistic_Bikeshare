@@ -124,6 +124,7 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  ### Geolocation of the Ride 
  With the help of tableau, plotted a map showing the trends of ride within Casual and Anuual riders. It showing that more number of rides take place near to beaches and there is a high trend of longer rides in beaches  compare to short range rides in city area. This may be illustarting in cities people using bike as a commute to work or for short distance travel.
  [Tableau](https://public.tableau.com/app/profile/shithul.m/viz/Cyclistic_map/Geo_location)
+ 
  ![Map](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/Geo_location.png)
  
  
