@@ -103,7 +103,7 @@ Result from this SQL statement were used to create visualization in Excel
  ```
  ![Rides_Month](https://github.com/Shithul/Cyclistic_Bikeshare/blob/main/RidesPer_Month.jpg)
  
-The chart above illustrates how the seasonal changes directly effecting the Bike trips. A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer . In warmer months there is a significant increase in Casual members using the service this is belive to be mainly due to Tourist season in california.
+The chart above illustrates how the seasonal changes directly effecting the Bike trips. A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer . In warmer months there is a significant increase in Casual members using the service this is belive to be mainly due to Tourist season in Chicago.
  
  ### Preferance of Ride Type
  Before Dec 2020 there was only two types of bikes were available Docked and Electric. After Dec2020 the company introduced Classic type of bikes .Lets analyse how this new introduction changed the riders preference. Following are the SQL query helped for this analysation.
@@ -127,7 +127,7 @@ The chart above illustrates how the seasonal changes directly effecting the Bike
  1. Subscription Members are taking more number of trips than the Casual riders.
  2. Casual riders taking longer trip length while Subscription members take shorter rides.And from analysing the time in a day were trips are more active we found out working hours being the peak time for subscription members usage. This illustrate Subscription members using bikes as a primary commute for work.
  3. While analysing Weekend trends for ride ,Casual members are more acive than subscription members.
- 4. No of rides totally depend upon the sesonal changes in California .A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer.
+ 4. No of rides totally depend upon the sesonal changes in Chicago .A significant drop in bike trips during the winter months and then bike trips increase as the weather gets warmer.
  5. There is a significant increase in casual members using the rides in June ,July, August and September this is belive to be because of the Tourists using this service in tourist seasons.
  6. After analysing the preferance of riders regarding Ride type . The Classic bike being most preferable among both Casual and Subscription Riders, while Docked bikes being the least .
  
